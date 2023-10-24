@@ -17,7 +17,7 @@ component.addEventListener('click', (e) => {
         console.log(e.target)
         component.classList.add('submitted')
         component.innerHTML = `<div class="thank-you-image">
-        <img src="images/illustration-thank-you.svg" alt="">
+        <img src="illustration-thank-you.svg" alt="">
       </div>
       <div class="feedback">you selected ${feedback} out of 5</div>
       <h3>Thank you!</h3>
