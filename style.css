@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+html {
+    font-size: 15px;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Very-Dark-Blue);
+    font-family: 'Overpass', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    background: var(--Dark-Blue);
+    width: 400px;
+    max-width: 100%;
+    padding: 3rem 0;
+    border-radius: 2rem;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    color: var(--Light-Grey);
+    font-weight: 400;
+}
+
+.component>* {
+    margin-bottom: 1rem;
+}
+
+.submitted {
+    text-align: center;
+    align-items: center;
+}
+
+.feedback {
+    background: hsl(214, 18%, 26%);
+    color: var(--Orange);
+    padding: .5em 1.25em;
+    border-radius: 2rem;
+    width: fit-content;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--White);
+}
+
+.submitted h3 {
+    margin-bottom: .4rem;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.rating {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: hsl(214, 18%, 26%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    cursor: pointer;
+}
+
+.rating:hover {
+    background: var(--Light-Grey);
+}
+
+.rating.active {
+    background: var(--Orange);
+}
+
+button {
+    background: var(--Orange);
+    font-size: 1.1rem;
+    color: var(--White);
+    word-spacing: 3px;
+    border: 0;
+    border-radius: 2rem;
+    padding: .5em 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover {
+    background: var(--White);
+    color: var(--Orange);
+}
